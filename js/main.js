@@ -19,7 +19,7 @@ backBtn?.addEventListener("click", () => {
   window.history.go(-1);
 });
 overlay.classList.add("overlay");
-if (location.pathname === "/dist/index.html") {
+if (location.pathname === "/audiophile/index.html") {
   document.getElementById("index-header").style.backgroundColor =
     "rgba(0, 0, 0, 0.9)";
 }
@@ -228,7 +228,7 @@ function subtract(e) {
 //checkout section
 const summaryContainer = document.querySelector(".summary__container");
 const summaryContent = document.querySelector(".summary__content");
-if (location.pathname === "/dist/checkout.html") {
+if (location.pathname === "/audiophile/checkout.html") {
   finalTotal.innerText = `$${JSON.parse(localStorage.getItem("total")).price}`;
   grandTotal.innerHTML = `$${
     +JSON.parse(localStorage.getItem("total")).price + 50 + 1078
